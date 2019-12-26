@@ -1,0 +1,34 @@
+title: datalab.mi
+author: Sous direction de l'innovation et la transformation numérique
+description: Page de presentation, avec les missions et les auteurs de la Sous Direcction de l'innovation numérique
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+sass:
+  sass_dir: _sass
+markdown: kramdown
+markdown_ext: 'wiki,mkdown,mkdn,mkd,md'
+
+defaults:
+  - 
+    scope:
+      path: ''
+    values:
+      layout: default
+      type: post
+  - 
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
+      permalink: '/blog/:title'
+    
+plugins:
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
