@@ -1,0 +1,167 @@
+---
+layout: default
+title: Laboratoire d'Innovation
+description: Ecouter, Tester, Transformer
+permalink: /labinnovation
+
+---
+
+<main role="main">
+  <section class="section section-dark"  id="haut_labinno">
+    <div class="container">
+      <h2 class="section__title">{{ page.title }}</h2>
+      <p class="section__subtitle">{{ page.description }}</p>
+
+        <center>
+        <a href="#services" class="button">commencer</a>
+        </center>
+    </div>
+  </section>
+
+  <section class="section section-white" id="typography">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Le pich du LAB MI</h2>
+          <p class="lead-text"> 
+            Depuis mars 2018, le LAB MI accueille et fait grandir les startups issues des propositions d'intrapreneu·r·ses du ministère de l'intérieur. Les produits ainsi développés s'inscrivent dans la stratégie de transformation numérique du ministére en apportant des solutions innovantes aux usagers et aux agents. 
+          </p>
+
+          <h3>  Le LAB MI n'est pas une DSI </h3>
+          <p>
+            Le cycle de vie d’une startup se termine par son intégration à coût marginal dans le système d’information du ministère de l'intérieur. Elle contribue ainsi à le transformer en lui transférant les principes des méthodes agiles & lean, d'équipe pluridisciplinaire intégrée, de design par la confiance etc. Pour cela, les agents du SI sont inclus au plus tôt dans les startups afin d'anticiper au mieux cette reprise.
+
+            Le LAB MI est donc responsable d’un flux de produits numériques et non le dépositaire d’un stock. 
+          </p>
+          <h3>L'écosystème</h3>
+          <p>
+            Le LAB MI fait partie de l’écosystème beta.gouv.fr qui réunit depuis 2013 de nombreux incubateurs autonomes. Dans ce sens, nous partageons les mêmes objectifs et les mêmes valeurs. Notre ambition est d'amener à l’excellence les individus que nous accueillons – quel que soit leur rôle : responsable de produit, informaticien·ne, coach, designer, chargé·e de développement… – pour construire les services publics les plus utiles à nos concitoyens.
+
+            Cet engagement est décrit dans le manifeste d'un incubateur disponible sur le site beta.gouv.fr. 
+          </p>
+        </div>
+        <div>
+          <h3>&nbsp;</h3>
+          <p><img width="100%" src="/assets/images/about/lumiere.jpg" alt=""></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-grey">
+    <div class="container">
+      <div class="tiles">
+        <h2>Nos startups</h2>
+        <p class="lead-text">
+           Nos startups en cours de développement
+        </p>
+      </div>
+      <div class="cards">
+        <div class="row">
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/labinnovation/histovec.png" la alt="Shiba Inu" />
+            </div>
+            <div class="card__content">
+              <h3>HISTOVEC</h3>
+              <p>Acheter un véhicule d'occasion en confiance en connaissant son historique.</p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2017</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/labinnovation/polex.png" alt="French Bulldog" />
+            </div>
+            <div class="card__content">
+              <h3>POLEX</h3>
+              <p>Détecter les fraudes organisées à l'examen du code de la route.
+              </p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2017</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/labinnovation/candilib.png" alt="Corgi" />
+            </div>
+            <div class="card__content">
+              <h3>CANDILIB</h3>
+              <p>
+                Accompagner le passage en candidat libre à l'épreuve pratique du permis de conduire.
+              </p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="typography">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Appel à l'action</h2>
+          <p class="lead-text">
+            Vous êtes le témoin d’irritants récurrents pour les usagers ou les agents ?
+            Sans être nécessairement un(e) expert(e) en informatique, internet vous intéresse ?
+            Vous avez une idée de solution numérique pouvant remédier au problème identifié ?
+            Vous êtes prêt(e) à vous investir six mois autour d’une équipe mobilisée pour réussir ?
+          </p>
+        </div>
+        <div>
+          <h3>&nbsp;</h3>
+          <a href="#services" class="button">Contactez nous</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-grey">
+    <div class="container">
+      <div class="tiles">
+        <h2>Équipe</h2>
+        <div class="grid">
+          {% for person in site.data.labinnovation.equipe %}
+          <div class="tile">
+            <h3>{{ person.nom }}</h3>
+            <p>{{ person.role }}</p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-white" id="form">
+    <div class="container">
+      <form action="https://formspree.io/datalab@interieur.gouv.fr" method="POST">
+        <h1>Nous contacter</h1>
+        <div class="form__group">
+          <label for="email">
+            Si vous souhaitez nous faire part d'une remarque, d'une suggestion ou encore juste prendre contact </label>
+          <input type="email" type="text" name="email" id="email" placeholder="email">
+        </div>
+        <div class="form__group">
+          <label for="name">Nom:</label>
+          <input type="name" type="text" name="name" id="name" placeholder="nom">
+        </div>
+
+        <div class="form__group">
+          <label for="message">Message :</label>
+          <textarea name="message" placeholder="Message: " id="message"></textarea>
+        </div>
+        <button class="button" type="submit" value="Send" name="subscribe" id="submit">Valider</button>
+      </form>
+    </div>
+  </section>
+
+
+</main>

@@ -206,7 +206,7 @@ permalink: /datalab
       <div class="tiles">
         <h2>Équipe</h2>
         <div class="grid">
-          {% for person in site.data.equipe %}
+          {% for person in site.data.datalab.equipe %}
           <div class="tile">
             <h3>{{ person.nom }}</h3>
             <p>{{ person.role }}</p>
@@ -217,29 +217,26 @@ permalink: /datalab
     </div>
   </section>
 
-
   <section class="section section-white" id="form">
     <div class="container">
-      <form action="#" method="post" name="form" target="_blank" novalidate>
+      <form action="https://formspree.io/datalab@interieur.gouv.fr" method="POST">
         <h1>Nous contacter</h1>
         <div class="form__group">
           <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
-          <input type="email" value="" name="email" id="email" placeholder="email">
+          <input type="email" type="text" name="email" id="email" placeholder="email">
         </div>
         <div class="form__group">
           <label for="name">Nom:</label>
-          <input type="name" value="" name="name" id="name" placeholder="nom">
+          <input type="name" type="text" name="name" id="name" placeholder="nom">
         </div>
 
         <div class="form__group">
           <label for="message">Message :</label>
-          <textarea name="message" id="message"></textarea>
+          <textarea name="message" placeholder="Message: " id="message"></textarea>
         </div>
-
-        <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
+        <button class="button" type="submit" value="Send" name="subscribe" id="submit">Valider</button>
       </form>
     </div>
   </section>
-
 
 </main>
