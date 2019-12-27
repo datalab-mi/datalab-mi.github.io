@@ -6,8 +6,11 @@ exclude:
   - Gemfile.lock
   - README.md
   - node_modules
+
 sass:
   sass_dir: _sass
+  style: compressed
+
 markdown: kramdown
 markdown_ext: 'wiki,mkdown,mkdn,mkd,md'
 

@@ -5,60 +5,61 @@ description: Transformez votre métier par la donnée
 
 ---
 
-<section id="haut">
-  <div class="haut-container">
-    <div>
-      <h1>{{ page.title }}</h1>
-      <h2>{{ page.description }}</h2>
-      <p><a href="#about" class="btn-get-started">découvrir</a> <a href="#services" class="btn-get-started">y accéder</a></p>
-    </div>
-  </div>
-</section>
-<!-- fin section haut -->
-<!-- debut main -->
-<main id="main">
-  <!-- debut section datalab -->
-  <section id="datalab">
+<main role="main">
+  <section class="section section-dark"  id="haut">
     <div class="container">
-      <div class="row about-container">
-        <div class="col-lg-6 content order-lg-1 order-2">
-          <h3 class="title">Le datalab</h3>
-          <p> Depuis juin 2016, le datalab soutien la mise en oeuvre de cas d'usages
-            de valorisation de donnée, proposés et conduits avec les directions métiers. </p>
+      <h2 class="section__title">{{ page.title }}</h2>
+      <p class="section__subtitle">{{ page.description }}</p>
 
-          <div class="icon-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="icon"><i class="fa fa-database" aria-hidden="true"></i></div>
-            <h4 class="title"> Le patrimoine de donnée </h4>
-            <p class="description">
-              Le <b>patrimoine des données</b> a été cartographié sur <a href="http://catalog.datalab.mi">catalog.datalab.mi</a> en 2017
-              est composé de cinq grandes familles (bien, personnes morales, personnes physiques, titres,
-              données administratives et géogrpahiques). Les enjeux, précisé dans
-              <a href="http://catalog.datalab.mi/fr/posts/patrimoine-des-donnees-du-ministere-de-linterieur/">cet article</a>
-              relèveront à terme du <b>big data</b>. Les données de détail, enfouies au sein du système d'information, sont le plus
-              souvent sous-exploitée, au mieux au sein d'infocentres faiblement détaillés. Le datalab vous aide à les valoriser.
-            </p>
-            <p class="description"><b> Le datalab permet au métier d'initier l'exploration de toutes leurs données,
-                avec l'appui de datascientist confirmés.</b> </p>
-          </div>
-          <div class="icon-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="icon"><i class="fa fa-flask" aria-hidden="true"></i></div>
-            <h4 class="title"> La datascience </h4>
-            <p class="description"> La datascience est une activité qui complète le métier traditionnel
-              du décisionnel et de statistiques. Les techniques avancées d'exploitation de la donnée
-              permettent de mettre en exergue des situations métier anormales ou au contraire d'apporter des solutions
-              à des problèmes identifier. S'il est carricaturté avec l'intelligence artificielle
-              (IA, ou apprentissage automatisé), c'est bien les technologies de l'apprentissage qui sont à l'origine
-              de ce nouveau métier. Cependant, l'application de l'IA a pour prérequis une <b>préparation des données</b>
-              qui représente souvent plus de 60% du travail. Ensuite, 20% du temps consistera à de l'algorithmie ou
-              des statistiques simples, voire à appliquer des règles de gestions. L'intelligence artificielle n'est possible
-              que dans des cas bien ciblés, ou lorsqu'il y a déjà une maturité dans la maîtrise des données. Enfin,
-              complexité et bénéfice métier sont indépendants.
-            </p>
-            <p class="description"><b>Aussi il est indispensable d'itérer en collaboration étroite avec
-                le métier pour évaluer la valeur des travaux de datascience </b></p>
-          </div>
+        <center>
+        <a href="#about" class="button">découvrir</a> 
+        <a href="#services" class="button">y accéder</a>
+        </center>
+    </div>
+  </section>
+
+  <section class="section section-white" id="typography">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>Le datalab</h2>
+          <p class="lead-text"> Depuis juin 2016, le datalab soutien la mise en
+            oeuvre de cas d'usages de valorisation de donnée, proposés et conduits
+            avec les directions métiers. 
+          </p>
+
+          <h3> Le patrimoine de donnée </h3>
+          <p>
+            Le <b>patrimoine des données</b> a été cartographié sur <a href="http://catalog.datalab.mi">catalog.datalab.mi</a> en 2017
+            est composé de cinq grandes familles (bien, personnes morales, personnes physiques, titres,
+            données administratives et géogrpahiques). Les enjeux, précisé dans
+            <a href="http://catalog.datalab.mi/fr/posts/patrimoine-des-donnees-du-ministere-de-linterieur/">cet article</a>
+            relèveront à terme du <b>big data</b>. Les données de détail, enfouies au sein du système d'information, sont le plus
+            souvent sous-exploitée, au mieux au sein d'infocentres faiblement détaillés. Le datalab vous aide à les valoriser.
+          </p>
+          <div class="typography__sample"><div class="text-quote"><p>
+                Le datalab permet au métier d'initier l'exploration de toutes
+                leurs données, avec l'appui de datascientist confirmés.
+              </p></div></div>
+              <h3>La datascience </h3>
+              <p> La datascience est une activité qui complète le métier traditionnel
+                du décisionnel et de statistiques. Les techniques avancées d'exploitation de la donnée
+                permettent de mettre en exergue des situations métier anormales ou au contraire d'apporter des solutions
+                à des problèmes identifier. S'il est carricaturté avec l'intelligence artificielle
+                (IA, ou apprentissage automatisé), c'est bien les technologies de l'apprentissage qui sont à l'origine
+                de ce nouveau métier. Cependant, l'application de l'IA a pour prérequis une <b>préparation des données</b>
+                qui représente souvent plus de 60% du travail. Ensuite, 20% du temps consistera à de l'algorithmie ou
+                des statistiques simples, voire à appliquer des règles de gestions. L'intelligence artificielle n'est possible
+                que dans des cas bien ciblés, ou lorsqu'il y a déjà une maturité dans la maîtrise des données. Enfin,
+                complexité et bénéfice métier sont indépendants.
+              </p>
+              <div class="typography__sample"><div class="text-quote"><p>
+                    Aussi il est indispensable d'itérer en collaboration étroite
+                    avec le métier pour évaluer la valeur des travaux de
+                    datascience
+                  </p></div></div>
         </div>
-        <div class="col-lg-6 order-lg-2 order-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+        <div>
           <h3>&nbsp;</h3>
           <p><img width="100%" src="img/illustrations/patrimoine_donnees_mi_familles.png" alt=""></p>
           <h3>&nbsp;</h3>
@@ -67,508 +68,177 @@ description: Transformez votre métier par la donnée
       </div>
     </div>
   </section>
-  <!-- fin section datalab -->
-  <!-- debut section services -->
-  <section id="services">
-    <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-      <div class="row">
-        <div class="col-lg-12 text-center text-lg-left">
-          <h3 class="cta-title">les services</h3>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <img  width="200px" src="img/logo_metiers/udata_white.svg" alt="Lab-mi"/>
-              </div>
-              <div class="col-lg-5">
-                <p class="cta-text">
-                  <br/>
-                  découvrir et reseigner le patrimoine des données<br/>
-                  partager les cas d'usage<br/>
-                </p>
-              </div>
-              <div class="col-lg-4 cta-btn-container text-center"> <a class="cta-btn align-middle" style="width:350px" href="http://catalog.datalab.mi">catalog.datalab.mi</a> </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <img  width="230px" src="img/logo_metiers/tableau-logo-white.svg" alt="Lab-mi"/>
-              </div>
-              <div class="col-lg-5">
-                <p class="cta-text">
-                  élaborer, communiquer, visualiser des rapports graphiques<br/>
-                  pour le métier, contrôleur de gestion, statisticien, datascientist<br/>
-                </p>
-              </div>
-              <div class="col-lg-4 cta-btn-container text-center"> <a class="cta-btn align-middle" style="width:350px" href="http://viz.datalab.mi">viz.datalab.mi</a> </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3">
-                <img  width="200px" src="img/logo_metiers/Logo_dataiku_white.svg" alt="Lab-mi"/>
-              </div>
-              <div class="col-lg-5">
-                <p class="cta-text">
-                  collecter, mettre en forme, en qualité, alogrithmie, apprentissage simple et profond<br/>
-                  pour data architect, data engineer, data scientist, statisticien, data expert, développeur<br/>
-                  SQL, python/scikit, R, scala, hadoop, tensorflow, ...<br/>
-                </p>
-              </div>
-              <div class="col-lg-4 cta-btn-container text-center"> <a class="cta-btn align-middle" style="width:350px" href="http://algo.datalab.mi">algo.datalab.mi</a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fin section services -->
-  <!-- debut section portfolio -->
-  <section id="eig">
-    <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-      <div class="section-header">
-        <h3 class="section-title">Les challenges</h3>
-        <p>
-          <a href="https://www.etalab.gouv.fr/fr/entrepreneurs-dinteret-general">
-            <img  class="mx-auto d-block" width="30%" src="img/logo_metiers/eig.svg" alt="">
-          </a>
-        </p>
-        <p class="section-description">Les cas d'usage pris en charge avec
-          <a href="https://www.etalab.gouv.fr/fr/entrepreneurs-dinteret-general">
-            Etalab
-          </a>
-          <br/>
-          Les cas d'usage, ayant vocation à résoudre un irritant du service public,
-          sont sélectionnés par Etalab, <br/> qui organise ensuite un concours pour sélectionner
-          des profils de haute compétence sur une durée de 10 mois.
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="http://catalog.datalab.mi/fr/reuses/geodecisionnel-accidents-et-verbalisations-cartav/" aria-label="terminé"><i class="fa fa-check" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="http://catalog.datalab.mi/fr/reuses/geodecisionnel-accidents-et-verbalisations-cartav/"><img  width="200px" src="img/logo_metiers/cartav.png" alt="cartAV"/></a></h4>
-            <p class="description">Augmenter la sécurité sur les routes avec les forces de sécurité intérieure en exploitant les données de verbalisations et d’accidents.</p>
-            <p><b> challenge 2017 - terminé ! </b></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="https://matchid-project.github.io/" aria-label="terminé"><i class="fa fa-check" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="https://matchid-project.github.io/"><img  height="80px" width="200px" src="img/logo_metiers/matchID-logo.svg" alt="matchID"/></a></a></h4>
-            <p class="description">rapprochements d'états civils jusqu'à 100 millions d'identités en utilisant le matching flou et l'intelligence artificielle</p>
-            <p><b> challenge 2017 - terminé ! </b></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="https://previsecours.fr" aria-label="en cours"><i class="fa fa-check" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="https://previsecours.fr#"><img height="80px" src="img/logo_metiers/previsecours_logo.png" alt="matchID"/></a></h4>
-            <p class="description">Permettre aux sapeurs-pompiers de prévoir leurs interventions futures</p>
-            <p><b> challenge 2018 - terminé ! </b></p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/iaflash.html" aria-label="en cours"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="https://entrepreneur-interet-general.etalab.gouv.fr/defis/2019/iaflash.html"><img height="80px" src="img/logo_metiers/logo-ia-flash.png" alt="matchID"/></a></h4>
-            <p class="description">Fiabiliser la constatation des contraventions à partir de la reconnaissance d’images</p>
-            <p><b> challenge 2019 - en cours</b></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fin section services -->
-  <!-- debut section startups -->
-  <section id="startups">
-    <div class="container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-      <div class="section-header">
-        <h3 class="section-title">Les start'ups</h3>
-        <p>
-          <a href="https://lab-mi.github.io">
-            <img  class="mx-auto d-block" width="30%" src="img/logo_metiers/lab_logo.png" alt="">
-          </a>
-        </p>
-        <p class="section-description">Depuis le printemps 2018, <a href="https://lab-mi.github.io">le LAB MI</a> accueille et fait grandir les startups <br/>
-          issues des propositions d'intrapreneu·r·ses du ministère de l'intérieur. Les produits ainsi développés <br/>
-          s'inscrivent dans la stratégie de transformation numérique du ministère en apportant des solutions <br/>
-          innovantes aux usagers et aux agents.<br/> 
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="https://histovec.interieur.gouv.fr" aria-label="une voiture"><i class="fa fa-car" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="https://histovec.interieur.gouv.fr"><img  height="80px"  src="img/logo_metiers/histovec_square.png" alt="histovec"/></a></h4>
-            <p class="description">Acheter un véhicule d'occasion en confiance en connaissant son historique.</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
-          <div class="box">
-            <div class="icon"><a href="#services" aria-label="Point d'exclamation"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a></div>
-            <h4 class="title"><a href="#"><img  height="80px" width="200px" src="img/logo_metiers/polex.svg" alt="histovec"/></a></h4>
-            <p class="description">Détecter les fraudes organisées à l'examen du code de la route.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fin section startups -->
-  <!-- debut section lentrepot -->
-  <section id="lentrepot">
-    <div class="container">
-      <div class="row about-container">
-        <div class="col-lg-6 content order-lg-1 order-2">
-          <h3 class="title">L'entrepôt</h3>
-          <p> Initié au premier semestre 2018, l'entrepôt vise à industrialiser
-            l'offre de valorisation de données, en permettant de raccourcir les étapes du POC à la mise
-            en production en cas de succès. </p>
 
-          <div class="icon-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="icon"><i class="fa fa-bar-chart" aria-hidden="true"></i></div>
-            <h4 class="title"> Les services de l'entrepôt </h4>
-            <p class="description" style="margin-bottom:5px;">
+
+  <section class="section section-grey">
+    <div class="container">
+      <div class="tiles">
+        <h2>Les challenges</h2>
+        <p class="lead-text">Les cas d'usage pris en charge avec <a
+            href="https://www.etalab.gouv.fr/fr/entrepreneurs-dinteret-general">
+            Etalab </a>, ayant vocation à résoudre un
+          irritant du service public, sont sélectionnés par Etalab, qui
+          organise ensuite un concours pour sélectionner des profils de haute
+          compétence sur une durée de 10 mois.
+        </p>
+      </div>
+      <div class="cards">
+        <div class="row">
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/datalab/cartav.png" la alt="Shiba Inu" />
+            </div>
+            <div class="card__content">
+              <h3>CartAV</h3>
+              <p>Augmenter la sécurité sur les routes avec les forces de sécurité intérieure en exploitant les données de verbalisations et d’accidents.</p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2017</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/datalab/matchID-logo.png" alt="French Bulldog" />
+            </div>
+            <div class="card__content">
+              <h3>MatchID</h3>
+              <p>Rapprochements d'états civils jusqu'à 100 millions d'identités en utilisant le matching flou et l'intelligence artificielle
+              </p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2017</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/datalab/previsecours_logo.png" alt="Corgi" />
+            </div>
+            <div class="card__content">
+              <h3>Previsecours</h3>
+              <p>Permettre aux sapeurs-pompiers de prévoir leurs interventions futures</p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2018</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__cover">
+              <img src="/assets/images/datalab/ia-flash.png" alt="Corgi" />
+            </div>
+            <div class="card__content">
+              <h3>IA Flash</h3>
+              <p>Fiabiliser la constatation des contraventions à partir de la
+                reconnaissance d’images</p>
+            </div>
+            <div class="card__extra">
+              <div class="label label--active">2018</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white" id="typography">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h2>L'entrepôt</h2>
+          <p class="lead-text"> Initié au premier semestre 2018, l'entrepôt vise à industrialiser
+            l'offre de valorisation de données, en permettant de raccourcir les étapes du POC à la mise
+            en production en cas de succès. 
+          </p>
+          <h3>Les services de l'entrepôt</h3>
+            <p>
               L'entrepôt vise au déploiement des outils du datalab, et apporte la puissance de l'intelligence
               artificielle et du big data aux problématiques de contrôle de gestion et d'analyse d'activité des métiers:
               <br/>
               Les produits actuellement dans l'offre de l'entrepôt sont :
             </p>
-            <ul class="description" >
+            <ul>
               <li><b>Dataiku :</b> transformation, mise en qualité, prédictif</li>
               <li><b>Tableau :</b> visualisation de données, reporting</li>
               <li><b>Vertica :</b>: gisement de données analytique</li>
             </ul>
-            </p>
-            <p class="description"> <b>Le premier entrepôt, au profit de la sécurité routière, sera mis en service en avril 2019.</b></p>
-            </p>
-          </div>
-          <div class="icon-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="icon"><i class="fa " aria-hidden="true"></i></div>
-            <h4 class="title"> Déploiement et RGPD </h4>
-            <p class="description" style="margin-bottom:5px;"> 
+            <div class="typography__sample"><div class="text-quote"><p>
+                  Le premier entrepôt, au profit de la sécurité routière, sera mis en service en avril 2019.
+                </p></div></div>
+
+          <h3>Les services de l'entrepôt</h3>
+          <p>
               Le déploiement de l'entrepôt repose sur la sécurité du cloud pour le cloisonnement
               et la protection des données. La fonction d'administration des données préconise
               un dépoiement séparant :
-            </p>
-            <ul class="description">
-              <li>un entrepôt statistique central par direction métier : 
-                cet entrepôt peut contenir des dérivées de données nominatives pseudonimisées
-                pour peut qu'elles n'aient pas d'impact à large échelle. Il s'agit de pouvoir
-                étudier les tendances comportementales en conservant la maille la plus fine 
-                des données (individu, véhicule, accident) sans viser des individus.
-              </li>
-              <li>un entrepôt par domaine réglementaire, contenant les données nominatives
-                pour d'une part assure la mise en qualité des données et d'autre part
-                assurer les traitement d'anonymisation, mais également les analyse de lutte
-                contre la fraude
-              </li>
-            </ul>
-            <p class="description">
-              <b>Ainsi, pour la sécurité routière, il est préconisé d'appliquer un hash salé
+          </p>
+          <ul class="description">
+            <li>un entrepôt statistique central par direction métier : 
+              cet entrepôt peut contenir des dérivées de données nominatives pseudonimisées
+              pour peut qu'elles n'aient pas d'impact à large échelle. Il s'agit de pouvoir
+              étudier les tendances comportementales en conservant la maille la plus fine 
+              des données (individu, véhicule, accident) sans viser des individus.
+            </li>
+            <li>un entrepôt par domaine réglementaire, contenant les données nominatives
+              pour d'une part assure la mise en qualité des données et d'autre part
+              assurer les traitement d'anonymisation, mais également les analyse de lutte
+              contre la fraude
+            </li>
+          </ul>
+          <div class="typography__sample"><div class="text-quote"><p>
+                Ainsi, pour la sécurité routière, il est préconisé d'appliquer un hash salé
                 pour les identifiant de permis, et de plaque, afin de faire permettre 
-                d'étudier le 360 des comportements et causes accidentogènes</b><
-            </p>
-          </div>            
-          <div class="icon-box wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-            <div class="icon"><i class="fa fa-refresh fa-spin" aria-hidden="true"></i></div>
-            <h4 class="title"> Feuille de route </h4>
-            <p class="description" style="margin-bottom:5px;"> 
-              Les produits à venir en cours d'intégration, déjà validé dans le datalab:
-            </p>
-            <ul class="description">
-              <li><b>Udata :</b>produit libre de catalogage de données / cas d'usage</li>
-              <li><b>Addok :</b> outil libre d'Etat de géocodage d'adresses scalable</li>
-              <li><b>matchID :</b> outil libre d'Etat de développement d'algorithmes de record linkage</li>
-              <li><b>Postgis :</b> base de données libre pour les jointures géographiques avancées</li>
-              <li><b>Elasticsearch :</b> base de données ouverte pour le fuzzy matching grands volumes</li>
-            </ul>
-            <p class="description" style="margin-bottom:5px;">Produit éligibles restant à valider:</p>
-            <ul class="description">
-              <li><b>Galigeo :</b> outil de visualisation géographiques</li>
-              <li><b>Mariadb AX :</b> base analytique libre, successeur potentiel de Vertica</li>
-            </ul>
-            </p>
+                d'étudier le 360 des comportements et causes accidentogènes
+              </p></div>
           </div>
         </div>
-        <div class="col-lg-6 order-lg-2 order-1 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+        <div>
           <h3>&nbsp;</h3>
-          <p><img class="mx-auto d-block" width="60%" src="img/logo_metiers/lentrepot_outils.png" alt=""></p>
+          <p><img width="60%" src="img/logo_metiers/lentrepot_outils.png" alt=""></p>
           <h3>&nbsp;</h3>
           <p><img width="100%" src="img/illustrations/deploiement_lentrepot.png" alt=""></p>
         </div>
       </div>
     </div>
   </section>
-  <!-- fin section lentrepot -->      
-  <!-- debut section team -->
-  <section id="team">
-    <div class="container wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-      <div class="section-header">
-        <h3 class="section-title">Équipe</h3>
-        <p class="section-description">Les différentes personnes contribuant aux actions data avec le datalab</p>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/equipe/petit/fabien_antoine.jpg" alt=""></div>
-            <h4>Fabien ANTOINE</h4>
-            <span>Pilote du datalab, leadtech et datascientist</span>
-            <div class="social"> <a href="https://github.com/rhanka" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/equipe/petit/laurent_dupont.png" alt=""></div>
-            <h4>Laurent DUPONT</h4>
-            <span>Leadtech et datascientists</span>
-            <div class="social"> <a href="https://github.com/duplau" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img src="img/equipe/petit/richard_violet.jpg" alt=""></div>
-            <h4>Richard VIOLET</h4>
-            <span>Intrapreneur Histovec et admin datalab</span>
-            <div class="social"> <a href="https://github.com/RitchyP" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="member">
-            <div class="pic"><img height="150px" src="img/equipe/petit/daniel_ansellem.jpg" alt=""></div>
-            <h4>Daniel Ansellem</h4>
-            <span>Administrateur ministériel des données</span>
-            <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-md-6">
-          <div class="member">
-          <div class="pic"><img height="150px" src="img/equipe/petit/philippe_deschamps.jpg" alt=""></div>
-          <h4>Philippe Deschamps</h4>
-          <span>sous-directeur des applications, pilote FTAP</span>
-          <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-          </div>
-          </div> -->
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Christophe MARQUAILLE</h4>
-              <span>Architecte BI, Lead offre de service data DSIC et l'entrepôt</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Jean-Christophe Montigny</h4>
-              <span>Architecte data</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Julien MOQUET</h4>
-              <span>Chef de bureau, coordonnateur de l'entrepôt et pilote FTAP Datascience</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>          
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe/petit/amine_fendri.jpg" alt=""></div>
-              <h4>Amine FENDRI</h4>
-              <span>Directeur projet SI ERPC, lead client data</span>
-              <div class="social"> <a href="https://github.com/amine-fendri" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe/petit/philippe_bron.jpg" alt=""></div>
-              <h4>Philippe BRON </h4>
-              <span>Pilote LAB</span>
-              <div class="social"> <a href="https://github.com/philippeBron" aria-label="github" target="_blank" alt="ouverture github"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://twitter.com/philippe_bron" aria-label="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>                <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://fr.linkedin.com/in/philippebron" aria-label="linkedin" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Adrien FRUMENCE</h4>
-              <span>data scientist</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Rémi Gérard</h4>
-              <span>data stewart</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>          
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Mathieu MANTA</h4>
-              <span>data scientist</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Anthony Guignard</h4>
-              <span>data scientist</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div> 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img height="150px" src="img/equipe/petit/victor-journe.jpg" alt="Victor Journé"></div>
-              <h4>Victor Journé</h4>
-              <span>data scientist deep learning (IA Flash)</span>
-              <div class="social"> <a href="https://github.com/victorjourne" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/in/victorjourne/" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>   
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img height="150px" src="img/equipe/petit/cristian-perez.jpg" alt="Cristian Perez Brokate"></div>
-              <h4>Cristian Perez</h4>
-              <span>data scientist deep learning (IA Flash)</span>
-              <div class="social"> <a href="https://github.com/cristianpb" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="https://twitter.com/cris_perez_b" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="https://www.linkedin.com/in/cristianperezbrokate" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>                          
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Edouard Dupont (Wavestone)</h4>
-              <span>data stewart</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>              
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Jean-Pierre Candusso (Sopra)</h4>
-              <span>data engineer</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div> 
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Johan Grande (Sopra)</h4>
-              <span>data engineer</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Rodia Serano (Sopra)</h4>
-              <span>data engineer</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-          </div>                                              
-          <!-- <div class="col-lg-3 col-md-6">
-            <div class="member">
-            <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-            <h4>Simone Tchinda</h4>
-            <span>data architect et data scientist</span>
-            <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-            </div>
-            </div> -->
-            <!-- <div class="col-lg-3 col-md-6">
-              <div class="member">
-              <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-              <h4>Abibatou Kemgné</h4>
-              <span>AMOA data, data scientist</span>
-              <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-              </div>
-              </div> -->
-              <!-- <div class="col-lg-3 col-md-6">
-                <div class="member">
-                <div class="pic"><img src="img/equipe.jpg" alt=""></div>
-                <h4>Stéphane VDOVENKO</h4>
-                <span>Architecte infra</span>
-                <div class="social"> <a href="#" aria-label="github" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> <a href="#" aria-label="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#" aria-label="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>                <a href="#" aria-label="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a> </div>
-                </div>
-                </div> -->
-      </div>
-    </div>
-  </section>
-  <!-- fin section team -->
-  <!-- debut section contact -->
-  <section id="contact">
-    <div class="container wow fadeInRight">
-      <div class="section-header">
-        <h3 class="section-title">Contact</h3>
-        <p class="section-description">prenez contact en direct avec Fabien Antoine ou Laurent Dupont, ou écrivez-nous !</p>
-      </div>
-      <div class="container wow fadeInUp">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-md-4">
-            <div class="info">
-              <div> <i class="fa fa-map-marker"></i>
-                <p>40, avenue des Terroirs de France<br> 75012 PARIS</p>
-              </div>
-              <div><i class="fa fa-envelope"></i>
-                <p class="m-b-40">datalab@interieur.gouv.fr</p>
-              </div>
 
-            </div>
-            <div class="social-links"> <a href="https://www.google.fr/maps/place/40+Avenue+des+Terroirs+de+France,+75012+Paris/@48.8316673,2.3863445,17z/data=!3m1!4b1!4m5!3m4!1s0x47e6723f569f9469:0xcfdae17f9b5eea15!8m2!3d48.8316638!4d2.3885332" class="instagram" target="_blank"><i class="fa fa-map-marker"></i></a>                <a href="mailto:beta@intenieur.gouv.fr" class="google-plus"><i class="fa fa-envelope"></i></a> <a href="https://twitter.com/LAB_MinInt" class="twitter"><i class="fa fa-twitter"></i></a> </div>
+  <section class="section section-grey">
+    <div class="container">
+      <div class="tiles">
+        <h2>Équipe</h2>
+        <div class="grid">
+          {% for person in site.data.equipe %}
+          <div class="tile">
+            <h3>{{ person.nom }}</h3>
+            <img class="tile__icon" src="images/icons/external/heart.svg" class="navbar__gouvfr" alt="{{ person.role }}" />
           </div>
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nom" data-rule="minlen:4" data-msg="Veuillez entrer au moins 4 caractères" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Courriel" data-rule="email" data-msg="Veuillez entrer un courriel valide" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" data-rule="minlen:4" data-msg="Veuillez entrer au moins 8 caractères du sujet" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="S'il vous plaît, écrivez quelque chose pour nous" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Envoyer</button>
-                </div>
-              </form>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
   </section>
-  <!-- fin section contact -->
-  <section>
-    <h1>&nbsp;</h1>
+
+
+  <section class="section section-white" id="form">
+    <div class="container">
+      <form action="#" method="post" name="form" target="_blank" novalidate>
+        <h1>Nous contacter</h1>
+        <div class="form__group">
+          <label for="email">Pour être informé des nouveautés, inscrivez-vous à notre newsletter :</label>
+          <input type="email" value="" name="email" id="email" placeholder="email">
+        </div>
+        <div class="form__group">
+          <label for="name">Nom:</label>
+          <input type="name" value="" name="name" id="name" placeholder="nom">
+        </div>
+
+        <div class="form__group">
+          <label for="message">Message :</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+
+        <button class="button" type="submit" name="subscribe" id="submit">Valider</button>
+      </form>
+    </div>
+  </section>
+
+
 </main>
-<!-- fin main -->
-<!-- debut footer -->
-<!-- fin footer -->
-<!-- debut chevron  -->
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-<!-- fin chevron  -->
-<!-- javaScript -->
-<script src="lib/jquery/jquery.min.js"></script>
-<script src="lib/jquery/jquery-migrate.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/superfish/hoverIntent.js"></script>
-<script src="lib/superfish/superfish.min.js"></script>
-<!-- javaScript contact -->
-<script src="contactform/contactform.js"></script>
-<!-- javaScript template -->
-<script src="js/main.js"></script>
