@@ -2,6 +2,7 @@
 layout: default
 title: datalab.mi
 description: Transformez votre métier par la donnée
+permalink: /datalab
 
 ---
 
@@ -208,7 +209,7 @@ description: Transformez votre métier par la donnée
           {% for person in site.data.equipe %}
           <div class="tile">
             <h3>{{ person.nom }}</h3>
-            <img class="tile__icon" src="images/icons/external/heart.svg" class="navbar__gouvfr" alt="{{ person.role }}" />
+            <p>{{ person.role }}</p>
           </div>
           {% endfor %}
         </div>
