@@ -1,29 +1,32 @@
+- nom: Daniel ANSELLEM
+  role: Sous-directeur de l'Innovation et de la Transformation numérique (SDIT), Administrateur ministériel des données
+
+- nom: Christophe MARQUAILLE
+  role: Chef du Laboratoire de la donnée, expert BI.
+
+- nom: Adrien FRUMENCE
+  role: Data scientist
+
+- nom: Mathieu MANTA
+  role: Data scientist
+
+- nom: Anthony GUIGNARD
+  role: Data scientist
+
+- nom: Eva HOYAU-BOVET
+  role : Data scientist
+
+- nom: Victor JOURNÉ
+  role: Data scientist deep learning (IA Flash)
+
+- nom: Cristian PEREZ BROKATE
+  role: Data scientist deep learning (IA Flash)
+
 - nom: Richard VIOLET
   role: Intrapreneur Histovec et admin datalab
 
-- nom: Daniel Ansellem
-  role: Administrateur ministériel des données
+- nom:  Jean-Pierre CANDUSSO (Sopra)
+  role: Data engineer
 
-- nom: Christophe MARQUAILLE
-  role: Architecte BI, Lead offre de service data DSIC et l'entrepôt
-
-- nom: Adrien FRUMENCE
-  role: data scientist
-
-- nom: Mathieu MANTA
-  role: data scientist
-
-- nom: Anthony Guignard
-  role: data scientist
-
-- nom: Victor Journé
-  role: data scientist deep learning (IA Flash)
-
-- nom: Cristian Perez Brokate
-  role: data scientist deep learning (IA Flash)
-
-- nom:  Jean-Pierre Candusso (Sopra)
-  role: data engineer
-
-- nom: Rodia Serano (Sopra)
-  role: data engineer
+- nom: Rodia SERRANO (Sopra)
+  role: Data engineer
