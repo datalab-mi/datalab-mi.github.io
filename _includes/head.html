@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>Site MGMSIC - datalab</title>
+  <title>{% if page.title != "" %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title> {% seo title=false %}
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <!-- favicons -->
   <link href="img/logo_metiers/mi.ico" rel="icon">
