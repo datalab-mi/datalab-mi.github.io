@@ -2,7 +2,10 @@
   role: Sous-directeur de l'Innovation et de la Transformation numérique (SDIT), Administrateur ministériel des données
 
 - nom: Christophe MARQUAILLE
-  role: Chef du Laboratoire de la donnée, expert BI.
+  role: Chef du Laboratoire de la donnée
+
+- nom: Benjamain BARRALON
+  role: Chef adjoint du Laboratoire de la donnée
 
 - nom: Adrien FRUMENCE
   role: Data scientist
