@@ -4,6 +4,16 @@ description: Page de presentation, avec les missions et les auteurs de la Sous D
 baseurl: "/datalab.mi" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+#permalink:        :slug/
+
+collections:
+  projects:
+    output: true
+    permalink: '/projects/:slug/'
+  wiki:
+    output: true
+    permalink: '/wiki/:slug/'
+
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -31,6 +41,21 @@ defaults:
     values:
       layout: post
       permalink: '/blog/:title'
+  - 
+    scope:
+      type: projects
+    values:
+      layout: post
+  - 
+    scope:
+      type: wiki
+    values:
+      layout: post
+  - 
+    scope:
+      path: '/blog'
+    values:
+      layout: post
     
 plugins:
   - jekyll-redirect-from

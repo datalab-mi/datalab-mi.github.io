@@ -1,14 +1,15 @@
 <header class="navbar" role="navigation">
   <div class="navbar__container">
-    <a class="navbar__home" href="index.html">
+    <a class="navbar__home" href="{{ '/' | relative_url }}">
       <img class="navbar__logo" src="{{ 'img/logo_metiers/datalab-round.png' | relative_url }}"
                                 alt="template.data.gouv.fr" /><span class="navbar__domain">datalab.mi</span>
     </a>
 
     <nav>
       <ul class="nav__links">
-        <li class="nav__item"><a href="{{ '/' | relative_url }}">Laboratoire de la donnée</a></li>
-        <li class="nav__item"><a href="{{ '/labinnovation' | relative_url }}">Laboratoire Innovation</a></li>
+        {% for collection in site.collections %}
+        <li class="nav__item"><a href="{{ collection.label | relative_url }}">{{ collection.label | capitalize }} </a></li>
+        {% endfor %}
       </ul>
     </nav>
   </div>
