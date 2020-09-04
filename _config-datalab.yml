@@ -1,0 +1,9 @@
+
+collections:
+  projects:
+    output: true
+    permalink: '/projects/:slug/'
+  wiki:
+    output: true
+    permalink: '/wiki/:slug/'
+

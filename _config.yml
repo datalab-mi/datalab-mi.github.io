@@ -4,16 +4,6 @@ description: Page de presentation, avec les missions et les auteurs de la Sous D
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://datalab-mi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-#permalink:        :slug/
-
-collections:
-  projects:
-    output: true
-    permalink: '/projects/:slug/'
-  wiki:
-    output: true
-    permalink: '/wiki/:slug/'
-
 exclude:
   - Gemfile
   - Gemfile.lock

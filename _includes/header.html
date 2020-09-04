@@ -7,9 +7,16 @@
 
     <nav>
       <ul class="nav__links">
+        {% assign post_number = site.posts  | size  %}
+        {% if post_number > 0 %}
         {% for collection in site.collections %}
         <li class="nav__item"><a href="{{ collection.label | relative_url }}">{{ collection.label | capitalize }} </a></li>
         {% endfor %}
+        {% else %}
+        <li class="nav__item"><a href="{{ 'sdit' | relative_url }}">SDIT</a></li>
+        <li class="nav__item"><a href="{{ '/' | relative_url }}">Laboratiore de la donée </a></li>
+        <li class="nav__item"><a href="{{ '/labinnovation' | relative_url }}">Laboratiore Innovation </a></li>
+        {% endif %}
       </ul>
     </nav>
   </div>
