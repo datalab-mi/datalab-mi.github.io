@@ -17,11 +17,6 @@ sass:
 markdown: kramdown
 markdown_ext: 'wiki,mkdown,mkdn,mkd,md'
 
-collections_dir: _collections
-collections:
-  pages:
-    output: true
-
 defaults:
   - 
     scope:
