@@ -1,3 +1,7 @@
 
 debug\.log
 _site
+.sass-cache
+# only html pages are in git
+_posts
+*.md
