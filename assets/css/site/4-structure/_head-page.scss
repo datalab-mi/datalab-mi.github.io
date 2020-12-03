@@ -1,0 +1,96 @@
+.head-page {
+    position: relative;
+    background: url("../images/Image_ouverture.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: $white;
+
+    .head-page--wrapper {
+        position: relative;
+        height: 100%;
+        padding-top: 8rem;
+    }
+    .chapo {
+        font-size: 2.4rem;
+        margin-top: 2rem;
+    }
+    .head-page-bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        bottom: 0;
+        background-color: $blue;
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+
+        &__title {
+            position: relative;
+            margin-bottom: 2rem;
+            padding-top: 4rem;
+            font-size: 3.2rem;
+            font-weight: $fw-bold;
+        }
+        &__content {
+            font-weight: $fw-bold;
+            margin-bottom: 2rem;
+        }
+
+        .go-down {
+            display: flex;
+            justify-content: center;
+            width: 6rem;
+            height: 6rem;
+            background-color: $white;
+        }
+    }
+}
+
+
+//--- RDW tablet/Desktop
+@include media-breakpoint-up(md) {
+    .head-page {
+        height: 55.1rem;
+        background-size: 100% 55.1rem;
+        .head-page--wrapper {
+            padding-top: 16rem;
+        }
+        .head-page-bottom {
+            position: absolute;
+            flex-direction: row;
+            &__title {
+                width: 20%;
+                margin-bottom: 0;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+                &:after {
+                    content: "";
+                    display: block;
+                    height: 4rem;
+                    width: .2rem;
+                    background: white;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+
+            &__content {
+                width: calc(80% - 13.4rem);
+                margin-left: 3rem;
+                margin-bottom: 0;
+                padding-right: 2rem;
+            }
+
+            .go-down {
+                position: absolute;
+                right: 0;
+                height: 100%;
+                width: 13.4rem;
+                display: flex;
+                justify-content: center;
+                background-color: $white;
+            }
+        }
+    }
+}

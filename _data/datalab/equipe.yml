@@ -1,29 +1,35 @@
 - nom: Daniel ANSELLEM
-  role: Sous-directeur de l'Innovation et de la Transformation numérique (SDIT), Administrateur ministériel des données
+  role: Administrateur ministériel des données
 
 - nom: Christophe MARQUAILLE
   role: Chef du Laboratoire de la donnée
 
 - nom: Benjamain BARRALON
   role: Chef adjoint du Laboratoire de la donnée
-
-- nom: Adrien FRUMENCE
-  role: Data scientist
+  description: Adjoint au chef du laboratoire depuis l’été 2020. Ingénieur des systèmes d’information et de communication au Ministère de l’Intérieur depuis 2016. Particulièrement intéressé par le recueil des besoins métier et les sujets IA autour de la vidéo.  
+  linkedin: https://www.linkedin.com/in/benjamin-barralon-14290a47
 
 - nom: Mathieu MANTA
   role: Data scientist
+  description: Data scientist au Ministère de l’Intérieur depuis 2016. Ancien expert et responsable d’acitivté DGA en traitemen automatique du langage et en intelligence artificielle depuis 2003.
 
 - nom: Anthony GUIGNARD
   role: Data scientist
+  description: "Data scientist au Ministère de l’Intérieur depuis 2019. Ancien chercheur en physique de l’atmosphère au CNRS. Intervient notamment sur : visualisation des données, analyses prédictive de séries temporelles, élaboration d’algorithmes à base de règles métiers, machine learning et traitement de l’image. "
+  linkedin: https://www.linkedin.com/in/anthony-guignard-8b915888/
 
 - nom: Eva HOYAU-BOVET
   role : Data scientist
+  description: "Data scientist au Ministère de l’Intérieur depuis 2019. Ingénieur des systèmes d’information et de communication depuis 2019. Intervient sur un panel de projets data : visualisation des données, analyses statistiques, élaboration d’algorithmes à base de règles métiers, machine learning et traitement du langage."
+  linkedin : https://www.linkedin.com/in/eva-hoyau-bovet
 
 - nom: Victor JOURNÉ
   role: Data scientist deep learning (IA Flash)
 
 - nom: Cristian PEREZ BROKATE
   role: Data scientist deep learning (IA Flash)
+  description: Data scientist au Ministère de l’Intérieur depuis 2019. Ancien Entrepreneur d’intérêt Général pour le projet IA Flash. 
+  linkedin: https://www.linkedin.com/in/cristianperezbrokate
 
 - nom: Richard VIOLET
   role: Intrapreneur Histovec et admin datalab

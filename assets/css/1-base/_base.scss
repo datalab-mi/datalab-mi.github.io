@@ -1,0 +1,129 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+/**
+ * Basic styling
+ */
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    font-weight: 300;
+    color: $blue;
+    // background-color: $background-color;
+}
+
+
+/**
+ * Images
+ */
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: 0;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    text-decoration: underline;
+    transition: color 250ms ease;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none !important;
+    }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        vertical-align: middle;
+
+        path {
+            fill: $white;
+        }
+    }
+}
+
+
+// paragraphs
+.right-border {
+    position: relative;
+    color: $blue;
+    padding-left: 3rem;
+
+    &:before {
+        content:"";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: .3rem;
+        height: 100%;
+        background-color: $blue;
+    }
+}
+
+// background
+.bg-gray {
+    background-color: $gray-200;
+}

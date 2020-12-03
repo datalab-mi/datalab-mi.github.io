@@ -1,19 +1,23 @@
-<header class="navbar" role="navigation">
-  <div class="navbar__container">
-    <a class="navbar__home" href="{{ '/' | relative_url }}">
-      <img class="navbar__logo" src="{{ 'img/logo_metiers/datalab-round.png' | relative_url }}"
-                                alt="template.data.gouv.fr" /><span class="navbar__domain">datalab.mi</span>
-    </a>
+<header class="rf-header">
+  <div class="container rf-container rf-container__header">
+    <div class="rf-header__body">
+      <div class="rf-header__brand">
+        <span class="rf-logo" title="Ministère de l'intérieur">
+          <span class="rf-logo__title">Ministère<br>de l'intérieur</span>
+        </span>
+      </div>
+      <img src="{{ '../assets/images/datalab-logo-header.svg' | relative_url }}" alt="datalab logo" />
 
-    <nav>
-      <ul class="nav__links">
-        {% assign post_number = site.posts  | size  %}
-        {% if post_number > 0 %}
-        {% for collection in site.collections %}
-        <li class="nav__item"><a href="{{ collection.label | relative_url }}">{{ collection.label | capitalize }} </a></li>
-        {% endfor %}
-        {% endif %}
-      </ul>
-    </nav>
+      <!-- menu burger -->
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+      <div class="nav-right">
+        <a href="#down" class="go-down btn btn-blue navbar__btn">
+          Nous contacter
+        </a>
+      </div>
+    </div>
+  </div>
   </div>
 </header>

@@ -1,0 +1,73 @@
+// Font-face
+// =============================================
+
+// 1. passer le setting `$enable-fontface` à `true`.
+$enable-fontface: true;
+
+// 2. déclarer la "map" des fontes utilisées
+$fonts-map-marianne: (
+    // sera utilisé comme valeur pour la font-family de ce groupe
+    'marianne': (
+        (
+            'font-path'    : "marianne/Marianne-Regular",
+            'font-weight'  : 400,
+            'font-style'   : normal,
+            'font-display' : swap
+        ),
+        // (
+        //     'font-path'    : "marianne/lato-blackitalic",
+        //     'font-weight'  : 900,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-bold",
+        //     'font-weight'  : 700,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-bolditalic",
+        //     'font-weight'  : 700,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-regular",
+        //     'font-weight'  : 400,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-italic",
+        //     'font-weight'  : 400,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-light",
+        //     'font-weight'  : 300,
+        //     'font-style'   : normal,
+        //     'font-display' : swap
+        // ),
+        // (
+        //     'font-path'    : "marianne/lato-lightitalic",
+        //     'font-weight'  : 300,
+        //     'font-style'   : italic,
+        //     'font-display' : swap
+        // )
+    )
+);
+
+
+
+// 3. définir le chemin vers le répertoire des webfontes
+$webfont-path: "../font/";
+
+// mixin
+@import '../0-mixin/mixin-font-face';
+
+// Font-face declarations
+@if ($enable-fontface) {
+    @include sc-import-fonts($fonts-map-marianne);
+}

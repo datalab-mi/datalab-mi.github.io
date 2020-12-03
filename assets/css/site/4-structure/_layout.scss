@@ -1,0 +1,108 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+main {
+    @include media-breakpoint-up(md) {
+        position: relative;
+    }
+    .block-text {
+        &:first-child {
+            margin-top: 6rem;
+        }
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+a {
+    transition: color 250ms ease;
+}
+
+.container-larger {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.block-space {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.block-text {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+@include media-breakpoint-up(md) {
+    main {
+        .block-text {
+            &:first-child {
+                margin-top: 13rem;
+            }
+        }
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .block-space {
+        margin-top: 13rem;
+        margin-bottom: 13rem;
+    }
+
+    .block-text {
+        margin-top: 8rem;
+        margin-top: 4rem;
+    }
+}
+.col--eq-height {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        display: flex!important;
+
+        > * {
+            width: 100%;
+        }
+    }
+}
+
+
+.btn-scroll-down {
+    position: absolute;
+    right: 100%;
+    bottom: -6rem;
+    right: 0;
+
+    width: 6rem;
+    height: 6rem;
+    display: block;
+    background: url("../images/arrow-down.svg") #0d0492;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+        background-color: darken($blue, 10%);
+        color: white
+    }
+
+    @include media-breakpoint-up(md) {
+        bottom: -9.7rem;
+        width: 9.7rem;
+        height: 9.7rem;
+    }
+}

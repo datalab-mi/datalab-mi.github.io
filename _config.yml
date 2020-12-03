@@ -13,6 +13,9 @@ exclude:
 sass:
   sass_dir: _sass
   style: compressed
+  load_paths:
+    - assets/css
+
 
 markdown: kramdown
 markdown_ext: 'wiki,mkdown,mkdn,mkd,md'

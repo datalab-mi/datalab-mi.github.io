@@ -1,0 +1,11 @@
+@each $weight, $value in $typo-familles-weight {
+    $italic: "-i";
+
+    .fw-#{$weight} {
+        font-weight: $value;
+    }
+    .fw-#{$weight}#{$italic} {
+        @extend .fw-#{$weight};
+        font-style: italic;
+    }
+}

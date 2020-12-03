@@ -1,0 +1,76 @@
+.btn {
+    display: inline-block;
+    font-family: $btn-font-family;
+    font-weight: $btn-font-weight;
+    color: $white;
+    text-align: center;
+    white-space: $btn-white-space;
+    vertical-align: middle;
+    cursor: if($enable-pointer-cursor-for-buttons, pointer, null);
+    user-select: none;
+    background-color: transparent;
+    border: $btn-border-width solid transparent;
+    text-decoration: none;
+    padding: .7rem 2.4rem;
+    @include transition($btn-transition);
+
+    @include hover() {
+      color: $blue;
+      text-decoration: none;
+      background-color: white;
+      border: 1px solid $blue;
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: $btn-focus-box-shadow;
+    }
+
+    // Disabled comes first so active can properly restyle
+    &.disabled,
+    &:disabled {
+      opacity: $btn-disabled-opacity;
+      @include box-shadow(none);
+    }
+
+    &:visited {
+      color: $white;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active {
+      @include box-shadow($btn-active-box-shadow);
+
+      &:focus {
+        @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
+      }
+    }
+  }
+
+  @each $color, $value in $project-colors {
+    .btn-#{$color} {
+      @include button-variant($value, $value);
+      @include hover() {
+        color: $value;
+        border: .2rem solid $value;
+        background-color: $white;
+      }
+    }
+  }
+  // secondary btn
+  @each $color, $value in $project-colors {
+    .btn-#{$color}-secondary {
+      color: $value;
+      border: .2rem solid $value;
+      background-color: $white;
+
+      &:visited {
+        color: $value;
+      }
+
+      @include hover() {
+        @include button-variant($value, $value);
+      }
+    }
+  }

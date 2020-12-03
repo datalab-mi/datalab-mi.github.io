@@ -1,0 +1,17 @@
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+//
+// LAYOUT
+//
+// important
+// - Respecter l'ordre d'appel
+// -- typography.scss
+// -- header
+// -- etc.
+//
+// + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + + +
+@import 'typography';
+@import 'layout';
+@import 'corp';
+@import 'header';
+@import 'head-page';
+@import 'footer';

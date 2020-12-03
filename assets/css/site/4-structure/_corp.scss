@@ -1,0 +1,20 @@
+// First section
+.bloc-domaine {
+    position: relative;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -2rem;
+        right: -2rem;
+        background-color: $blue;
+        border-radius: 1rem;
+        width: 11.2rem;
+        height: 11.2rem;
+        z-index: -1;
+    }
+}
+
+.bg-blue {
+    background-color: $blue;
+}
