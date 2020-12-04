@@ -219,9 +219,21 @@
                 <div class="dl-equipe-item --in-tag">
                     <div class="dl-equipe--img">
                       {% if person.image %}
-                      <img src="{{ person.image | prepend:  '/assets/images/equipe/' | relative_url }}" alt="domaines" />
+                        {% if person.linkedin %}
+                        <a href="{{ person.linkedin }}">
+                          <img src="{{ person.image | prepend:  '/assets/images/equipe/' | relative_url }}" alt="domaines" />
+                        </a>
+                        {% else %}
+                          <img src="{{ person.image | prepend:  '/assets/images/equipe/' | relative_url }}" alt="domaines" />
+                        {% endif %}
                       {% else %}
-                      <img src="{{ '/assets/images/profil.svg' | relative_url }}" alt="domaines" />
+                        {% if person.linkedin %}
+                        <a href="{{ person.linkedin }}">
+                          <img src="{{ '/assets/images/profil.svg' | relative_url }}" alt="domaines" />
+                        </a>
+                        {% else %}
+                        <img src="{{ '/assets/images/profil.svg' | relative_url }}" alt="domaines" />
+                        {% endif %}
                       {% endif %}
                     </div>
                     <div class="dl-equipe--content">
