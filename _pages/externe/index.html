@@ -224,6 +224,9 @@
                       <p class="dl-equipe--title">{{ person.nom }}</p>
                       <p class="dl-equipe--text">{{ person.role }}</p>
                     </div>
+                    {% if person.description %}
+                    <span class="tooltiptext">{{ person.description }}</span>
+                    {% endif %}
                 </div>
                 {% endfor %}
             </div>
