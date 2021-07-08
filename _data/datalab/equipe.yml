@@ -14,12 +14,6 @@
   role: Data scientist
   description: Data scientist au Ministère de l’Intérieur depuis 2016. Ancien expert et responsable d’acitivté DGA en traitemen automatique du langage et en intelligence artificielle depuis 2003.
 
-- nom: Anthony GUIGNARD
-  role: Data scientist
-  description: "Data scientist au Ministère de l’Intérieur depuis 2019. Ancien chercheur en physique de l’atmosphère au CNRS. Intervient notamment sur : visualisation des données, analyses prédictive de séries temporelles, élaboration d’algorithmes à base de règles métiers, machine learning et traitement de l’image. "
-  linkedin: https://www.linkedin.com/in/anthony-guignard-8b915888/
-  image: anthony.jpg
-
 - nom: Eva HOYAU-BOVET
   role : Data scientist
   description: "Data scientist au Ministère de l’Intérieur depuis 2019. Ingénieur des systèmes d’information et de communication depuis 2019. Intervient sur un panel de projets data : visualisation des données, analyses statistiques, élaboration d’algorithmes à base de règles métiers, machine learning et traitement du langage."
