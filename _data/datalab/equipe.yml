@@ -33,3 +33,10 @@
 - nom: Raphaël Bévenot
   role: Ingénieur en informatique décisionnel
   image: raphael.jpg
+
+- nom: Thierry Gameiro Martins
+  role: Data scientist
+  description: "Data scientist au Ministère de l’Intérieur depuis 2021."
+  #linkedin: XXX
+  #image: XX
+
