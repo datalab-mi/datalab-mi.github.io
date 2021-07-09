@@ -5,3 +5,4 @@ _site
 # only html pages are in git
 _posts
 *.md
+.DS_STORE
