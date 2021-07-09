@@ -1,14 +1,14 @@
 - nom: Christophe MARQUAILLE
   role: Chef du Laboratoire de la donnée
 
-- nom: Benjamain BARRALON
+- nom: Benjamin BARRALON
   role: Chef adjoint du Laboratoire de la donnée
   description: Adjoint au chef du laboratoire depuis l’été 2020. Ingénieur des systèmes d’information et de communication au Ministère de l’Intérieur depuis 2016. Particulièrement intéressé par le recueil des besoins métier et les sujets IA autour de la vidéo.  
   linkedin: https://www.linkedin.com/in/benjamin-barralon-14290a47
 
 - nom: Mathieu MANTA
   role: Data scientist
-  description: Data scientist au Ministère de l’Intérieur depuis 2016. Ancien expert et responsable d’acitivté DGA en traitemen automatique du langage et en intelligence artificielle depuis 2003.
+  description: Data scientist au Ministère de l’Intérieur depuis 2016. Ancien expert et responsable d’activité DGA en traitement automatique du langage et en intelligence artificielle depuis 2003.
 
 - nom: Eva HOYAU-BOVET
   role : Data scientist
@@ -27,5 +27,12 @@
   image: cristian.jpg
 
 - nom: Raphaël Bévenot
-  role: Ingénieur en informatique décisionnel
+  role: Ingénieur en informatique décisionnelle
   image: raphael.jpg
+
+- nom: Thierry Gameiro Martins
+  role: Data scientist
+  description: Data scientist au Ministère de l’Intérieur depuis 2021.
+  linkedin: https://www.linkedin.com/in/titigmr
+  image: thierry.jpg
+
